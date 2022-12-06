@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="abc"></p> <br>
+<p id="ABC"></p><br>
+<p id="xyz"></p><br>
+<p id="xzy"></p><br>
+<p id="yzx"></p><br>
+<p id="bca"></p><br>
+<p id="cab"></p><br>
+<p id="nam"></p><br>
+<p id="per"></p><br>
+<script>
+    //---------------Adding two variables---------------------------------
+    var a=5;
+    var b =6;
+    var c=a+b;
+    document.getElementById("abc").innerHTML="Total is:-"+" "+c;
+    //---------------Inserting String-------------------------------------
+    var x="Aryan"+" "+"Choudhary";
+    document.getElementById("ABC").innerHTML="User name:-"+" "+x;
+    //---------------Adding two "Integer" and "String"--------------------
+    var s= "1"+2+3
+    document.getElementById("xyz").innerHTML="When first variable is string:-"+" "+s
+    var s= 1+"2"+3
+    document.getElementById("xzy").innerHTML="When Second variable is string:-"+" "+s
+    var s= 1+2+"3"
+    document.getElementById("yzx").innerHTML="When Third variable is string:-"+" "+s
+    //---------------Adding two string------------------------------------
+    name1="Welcome to ";
+    name1 += "Lovely Professional University";
+    document.getElementById("bca").innerHTML = name1;
+    //---------------Adding two string------------------------------------
+    var x = 5+10;
+    var y = "5"+10;
+    var z="Hello"+5;
+    document.getElementById("cab").innerHTML="Value of x:-"+" "+x+"<br><br>"+"Value of y:-"+" "+y+"<br><br>"+"Value of z:-"+" "+z;
+    //---------------JS Arrays---------------------------------------------
+    var names=["aryan","paramjeet","saurabh","herin","jaichand","milan","guri","choudhary"];
+    document.getElementById("nam").innerHTML=names[0]+" "+names[7];
+    //---------------JS Objects--------------------------------------------
+    var person={
+        firstname:"Aryan",
+        lastname:"choudhary",
+        age:17
+    };
+    document.getElementById("per").innerHTML=person.firstname+" "+person.lastname+" "+"is"+" "+person.age+" "+"years old.";
+    //---------------JS Objects--------------------------------------------
+
+</script>
+</body>
+</html>
